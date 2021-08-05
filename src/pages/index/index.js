@@ -8,7 +8,6 @@ import Index_body from '../../components/index/index_body';
 import Footer from '../../components/footer/footer';
 import Navbar from '../../components/navbar/navbar';
 
-
 const Index = () =>{
 	return(
 		<React.Fragment>
