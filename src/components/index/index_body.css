@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
+
+.index_body{
+	background-image: linear-gradient(to bottom, #000000, #000000, 
+		#250d18, #400e2d, #5a0e48, #71116a, #76107c, #791390, #771aa6, 
+		#6916aa, #5814af, #4114b3, #1716b8, #000000);
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.text{
+	margin-left: 18vw;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: white;
+    position: absolute;
+    /*margin: auto;*/
+    z-index: 5;
+    line-height: 1;
+    /*margin-left: 20vw;*/
+}
+
+
+.title-page-name{
+	margin-top: 1vw;
+	font-size: 5vw;
+	margin-bottom: -0.5vw;
+}
+
+.text h2{
+	font-size: 3vw;
+}
+
+.Raunak-Anand{
+	padding: 0.5vw;
+	width: 35vw;
+	height: auto;
+	border-radius: 50vw;
+	border: 0.3vw solid white;
+}
+
+.social-logos{
+	margin-top: 3vw;
+}
+
+.logos{
+	width: 5vw;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	margin-bottom: 5vw;
+}
+
+#particles-js{
+	height: 90vh;
+	width: 100vw;
+}
+
+@media (min-width:760px) {
+	.text{
+		margin-left: 28vw;
+	}
+	.title-page-name{
+		font-size: 3.5vw;
+	}
+
+	.text h2{
+		font-size: 2vw;
+	}
+
+	.Raunak-Anand{
+		width: 20vw;
+	}
+
+	.social-logos{
+		margin-top: 2.5vw;
+	}
+
+	.logos{
+		width: 3vw;
+	}
+
+}

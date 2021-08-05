@@ -1,0 +1,252 @@
+.aboutMe_body{
+	background-image: linear-gradient(to bottom, #000000, #000000, 
+		#250d18, #400e2d, #5a0e48, #71116a, #76107c, #791390, #771aa6, 
+		#6916aa, #5814af, #4114b3, #1716b8, #000000);
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	padding-bottom: 7vw;
+}
+
+.aboutMe_body h1{
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	color: white;
+	margin-left: 8vw;
+	font-size: 3.5vw;
+
+}
+
+.work_experience{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.block{
+	display: flex;
+	flex-direction: row;
+	background-color: black;
+	text-align: right;
+	margin: auto;
+	align-items: center;
+	width: 85vw;
+	border-radius: 2vw;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+	/*box-shadow: 0vw 0vw 0.5vw 0.5vw #000000;*/
+	height: 15vw;
+	cursor: pointer;
+}
+
+.block img{
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+	width: 10vw;
+	margin-left: 5vw;
+}
+
+.block_content{
+	text-align: right;
+	margin: auto;
+	color: white;
+	margin-right: 4vw;
+	line-height: 1;
+}
+
+.block_content h3{
+	font-size: 2vw;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.block_content h4{
+	font-size: 1.5vw;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.include{
+	border-radius: 50%;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+.workPopUp {
+    position: fixed;
+    left: 20vw;
+    top: 8vw;
+    right: 20vw;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    height:  70vh;
+    background-color: black;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #000000;
+    border-radius: 15px;
+    box-shadow: 0vw 0vw 0.25vw 0.25vw #ffffff;
+}
+
+.workPopUp-content{
+	display: flex;
+	flex-direction: column;
+	margin-top: -2vw;
+}
+
+.workPopUp button {
+    font-size: 2vw;
+    align-self: flex-end;
+    color: white;
+    background-color: unset;
+    padding: 1.5vw;
+    border: unset;
+    cursor: pointer;
+
+}
+
+.masterclass-pop-up, .womenindata-pop-up, .include-pop-up{
+	width: 12vw;
+	margin-left: 4vw;
+	margin-right: 3vw;
+}
+
+.include-pop-up{
+	border-radius: 50%;
+}
+
+.its-pop-up, .sachacks-pop-up{
+	width: 15vw;
+	margin-left: 4vw;
+	margin-right: 3vw;
+}
+
+.sachacks-pop-up{
+	padding-top: 3vw;
+	height: 4vw;
+}
+
+.airtel-pop-up{
+	width: 10vw;
+	margin-left: 4vw;
+	margin-right: 3vw;
+}
+
+.renewbuy-pop-up{
+	width: 12vw;
+	padding-top: 2vw;
+	margin-left: 4vw;
+	margin-right: 3vw;
+}
+
+.workPopUp-first-row{
+	display: flex;
+	flex-direction: row;
+}
+
+.work-intro{
+	display: flex;
+	flex-direction: column;
+	color: white;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	line-height: 1;
+}
+
+.workPopUp-first-row{
+	margin-bottom: 3vw;
+}
+
+.work-intro h3{
+	font-size: 2vw;
+	margin-bottom: -1vw;
+}
+
+.work-intro h4{
+	font-size: 1.5vw;
+	margin-bottom: -1vw;
+}
+
+.work-intro h5{
+	font-size: 1vw;
+	margin-bottom: -1vw;
+}
+
+.workPopUp-second-row ul, .workPopUp-content a{
+	color: white;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-size: 1.2vw;
+	margin-right: 0.5vw;
+}
+
+.workPopUp-content a{
+	margin-left: 2vw;
+}
+
+@media (max-width:760px) {
+	.aboutMe_body h1{
+		font-size: 5vw;
+	}
+
+	.block{
+		height: 20vw;;
+	}
+
+	.block img{
+		width: 14vw;
+	}
+
+	.block_content h3{
+		font-size: 2.5vw;
+	}
+
+	.block_content h4{
+		font-size: 2vw;
+	}
+
+	.workPopUp {
+		top: 19vw;
+	}
+
+	.workPopUp button{
+		font-size: 4vw;
+	}
+
+	.masterclass-pop-up, .womenindata-pop-up, .include-pop-up{
+		width: 17vw;
+	}
+
+	.work-intro h3{
+		font-size: 2.5vw;
+	}
+
+	.work-intro h4{
+		font-size: 1.8vw;
+	}
+
+	.work-intro h5{
+		font-size: 1.5vw;
+	}
+
+	.workPopUp-second-row ul, .workPopUp-content a{
+		font-size: 2vw;
+		margin-right: 1vw;
+	}
+
+	.workPopUp-content a{
+		margin-left: 4vw;
+	}
+
+	.its-pop-up, .sachacks-pop-up{
+		width: 20vw;
+	}
+
+	.sachacks-pop-up{
+		padding-top: 5vw;
+		height: 5vw;
+	}
+
+	.airtel-pop-up{
+		width: 14vw;
+	}
+
+	.renewbuy-pop-up{
+		width: 20vw;
+	}
+}
