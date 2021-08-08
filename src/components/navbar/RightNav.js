@@ -52,9 +52,8 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li><a href="/">Home</a></li>
       <li><a href="/work">Work</a></li>
-      <li><a href="https://docs.google.com/document/d/1g9OWZlYmdrewHjvRvqMnTaETZbJdHP8aDumtaj_QRZo/edit?usp=sharing" target="_blank" rel="noreferrer">Resume</a></li>
+      <li><a href="/RaunakAnand_Resume.pdf" target="_blank" rel="noreferrer">Resume</a></li>
     </Ul>
   )
 }

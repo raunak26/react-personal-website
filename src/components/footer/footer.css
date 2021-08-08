@@ -37,7 +37,7 @@
 .footer_logos{
 	width: 3vw; /*changed this*/
 	height: auto;
-	margin: 1vw; /*changed this*/
+	margin: 1.5vw; /*changed this*/
 }
 
 .col-two{
@@ -54,7 +54,7 @@
 .col-two ul{
 	margin: auto;
 	text-align: left;
-	list-style-type: square;
+	list-style-type: none;
 	margin-top: -0.5vw;
 	font-family: 'M PLUS Rounded 1c';
 }
@@ -79,7 +79,11 @@
 .col-two ul>li>a{
 	text-decoration: none;
 	color: white;
-	margin-left: 1vw;
+	margin-left: -2vw;
+}
+
+.col-three h3{
+	margin-left: -6vw;
 }
 
 .col-three{
@@ -94,7 +98,7 @@
 	list-style-type: none;
 	font-size: 1.5vw;
 	margin: auto;
-	margin-top: -1vw;
+	margin-top: -0.5vw;
 	font-family: 'M PLUS Rounded 1c';
 }
 
@@ -151,8 +155,9 @@
 
 	.footer_logos{
 		width: 2vw; 
-		margin: 0.5vw; 
+		margin: 1vw; 
 	}
+
 
 	.col-two h3, .col-three h3{
 		font-size: 1.5vw;

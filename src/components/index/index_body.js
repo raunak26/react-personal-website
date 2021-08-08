@@ -27,7 +27,7 @@ const Index_body = () =>{
             				},
             				move:{
 				                enable:true,
-				                speed:2,
+				                speed:0.75,
 				                direction: "none",
 				            }
             			},

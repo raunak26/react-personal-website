@@ -17,13 +17,12 @@ const Footer = () =>{
 					<div className="col col-two">
 						<h3>Links</h3>
 						<ul>
-							<li><a href="/">Home</a></li>
 							<li><a href="/aboutMe">Work</a></li>
 							<li><a href="https://docs.google.com/document/d/1g9OWZlYmdrewHjvRvqMnTaETZbJdHP8aDumtaj_QRZo/edit?usp=sharing" target="_blank" rel="noreferrer">Resume</a></li>
 						</ul>
 					</div>
 					<div className="col col-three">
-						<h3>Have a question?</h3>
+						<h3>Contact me</h3>
 						<ul>
 							<li><span><img src="/images/location.png" class="ques-logo location" alt="location"/></span>Davis, CA</li>
 							<li><span><img src="/images/phone.png" class="ques-logo" alt="phone"/></span>(530) 979-3197</li>
@@ -38,13 +37,12 @@ const Footer = () =>{
 					<div className="col col-two">
 						<h3>Links</h3>
 						<ul>
-							<li><a href="/">Home</a></li>
 							<li><a href="/work">Work</a></li>
-							<li><a href="https://docs.google.com/document/d/1g9OWZlYmdrewHjvRvqMnTaETZbJdHP8aDumtaj_QRZo/edit?usp=sharing" target="_blank" rel="noreferrer">Resume</a></li>
+							<li><a href="/RaunakAnand_Resume.pdf" target="_blank" rel="noreferrer">Resume</a></li>
 						</ul>
 					</div>
 					<div className="col col-three">
-						<h3>Have a question?</h3>
+						<h3>Contact me</h3>
 						<ul>
 							<li><span><img src="/images/location.png" class="ques-logo location" alt="location"/></span>Davis, CA</li>
 							<li><span><img src="/images/phone.png" class="ques-logo" alt="phone"/></span>(530) 979-3197</li>

@@ -13,7 +13,9 @@ const NavMobile = styled.nav`
   .logo img{
     width: 60px;
     height: auto;
-    padding: 8px 0px;
+    margin: 8px 0px;
+    border-radius: 50%;
+    background-color: #ffffff;
   }
   .menu-web{
     display: flex;
