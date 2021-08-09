@@ -79,7 +79,7 @@
 .col-two ul>li>a{
 	text-decoration: none;
 	color: white;
-	margin-left: -2vw;
+	margin-left: -5vw;
 }
 
 .col-three h3{
@@ -169,6 +169,10 @@
 
 	.col-two ul>li, .col-three ul>li{
 		font-size: 0.9vw; 
+	}
+
+	.col-two ul>li>a{
+		margin-left: -2vw;
 	}
 
 	.ques-logo{
