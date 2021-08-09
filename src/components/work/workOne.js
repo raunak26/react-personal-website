@@ -29,7 +29,7 @@ export default function WorkOne({open, children, onClose}){
                     </div>
                     <div class="workPopUp-second-row">
                         <ul>
-                            <li>Implemented a bulk admin user service on the back end panel that would exponentially speed up the hiring process.</li>
+                            <li>Implemented a bulk admin user service on the back end panel to speed up the hiring process exponentially.</li>
                         </ul>
                     </div>
                     <a href="https://www.masterclass.com/">https://www.masterclass.com/</a>
