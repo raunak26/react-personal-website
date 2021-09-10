@@ -29,10 +29,8 @@ export default function WorkTwo({open, children, onClose}){
                     </div>
                     <div class="workPopUp-second-row">
                         <ul>
-                            <li>Lead pro bono projects where 60+ members worked to build web 
-                            applications for local non-profit organizations.</li>
-                            <li>Increased velocity of deployments by 100% and reduced their error rate by 21%.</li>
-                            <li>Implemented Agile methodology to reduce delivery timeline by 19%.</li>
+                            <li>Led 60+ members to collaborate on projects that provide non-profit organizations with an online presence.</li>
+                            <li>Implemented Agile methodology to reduce the delivery timeline, and increased the velocity of deployments by 100%</li>
                         </ul>
                     </div>
                     <a href="http://www.includedavis.com/">http://www.includedavis.com/</a>

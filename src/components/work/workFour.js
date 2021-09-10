@@ -29,9 +29,8 @@ export default function WorkFour({open, children, onClose}){
                     </div>
                     <div class="workPopUp-second-row">
                         <ul>
-                            <li>Implemented Google Analytics and increased hackathon participation by 45% through UI/UX improvement.</li>
-                            <li>Developed the ReactJS website to organize the Lovelace hackathon dedicated to representing women and other
-underrepresented communities in the field of technology.</li>
+                            <li>Increased hackathon participation by 45% through UI/UX improvement and Google Analytics implementation.</li>
+                            <li>Developed website for Lovelace hackathon, organized to represent women and minor communities.</li>
                             <li>Migrated organization legacy code to newer frameworks to inculcate team advancement.</li>
                         </ul>
                     </div>

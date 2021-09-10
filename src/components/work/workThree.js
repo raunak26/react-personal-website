@@ -29,9 +29,8 @@ export default function WorkThree({open, children, onClose}){
                     </div>
                     <div class="workPopUp-second-row">
                         <ul>
-                            <li>Developed and introduced a machine-learning algorithm to detect Alzheimer’s disease based on a Kaggle dataset.</li>
-                            <li>Conducted a series of Python and Jupyter tutorial workshops while discussing relevant usages in data science.</li>
-                            <li>Increased total club membership by 85% and the induction of members into technological careers by 25%.</li>
+                            <li>Conducted a series of Python and Jupyter tutorial workshops and increased total club membership by 85%.</li>
+                            <li>Developed a machine-learning algorithm to detect Alzheimer’s disease based on a Kaggle dataset.</li>
                         </ul>
                     </div>
                     <a href="https://www.womenindata.org/">https://www.womenindata.org/</a>

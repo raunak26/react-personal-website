@@ -29,7 +29,10 @@ export default function WorkOne({open, children, onClose}){
                     </div>
                     <div class="workPopUp-second-row">
                         <ul>
-                            <li>Implemented a bulk admin user service on the back end panel to speed up the hiring process exponentially.</li>
+                            <li>Implemented multi-instructor feature to appeal to a wider audience, aligning to the growth strategy initiative.</li>
+                            <li>Executed database migrations and addition/deletion logics, improving QOL of Class Launch Automator (CLA) by
+35% and decreased time to build an entire course by 22%.</li>
+                            <li>Developed bulk admin service that automates contractor onboarding/offboarding, reducing time by 200%.</li>
                         </ul>
                     </div>
                     <a href="https://www.masterclass.com/">https://www.masterclass.com/</a>
