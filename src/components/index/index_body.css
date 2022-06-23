@@ -13,14 +13,13 @@
 }
 
 .text{
-	margin-left: 18vw;
 	font-family: 'M PLUS Rounded 1c', sans-serif;
     color: white;
     position: absolute;
-    /*margin: auto;*/
+    margin: auto;
     z-index: 5;
     line-height: 1;
-    /*margin-left: 20vw;*/
+	margin-left: 28vw;
 }
 
 
@@ -61,7 +60,7 @@
 
 @media (min-width:760px) {
 	.text{
-		margin-left: 28vw;
+		margin-left: 34vw;
 	}
 	.title-page-name{
 		font-size: 3.5vw;
