@@ -69,8 +69,8 @@ const Index_body = () =>{
         						typingDelay={(500)}
       						/>
 						</div>
-                    	<h2>Computer Science and Statistics at UC Davis</h2>
-                    	<h2>Software Engineer Intern at MasterClass</h2>
+                    	<h2>Computer Science at UC Davis</h2>
+                    	<h2>Software Engineer at Microsoft</h2>
 
                     	<div className="social-logos">
                     		<a href="https://www.linkedin.com/in/raunak-anand/" target="_blank" rel="noreferrer"><img src="/images/linkedin.png" class="logos" alt="linkedin"/></a>
