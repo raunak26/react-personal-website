@@ -23,7 +23,7 @@ export default function WorkTwo({open, children, onClose}){
                         <div class="work-intro">
                             <h3>#include at UC Davis</h3>
                             <h4>Director of Technology - Front End</h4>
-                            <h5>March 2021 - Present</h5>
+                            <h5>March 2021 - June 2022</h5>
                             <h5>Davis, CA</h5>
                         </div>
                     </div>

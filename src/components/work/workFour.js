@@ -23,7 +23,7 @@ export default function WorkFour({open, children, onClose}){
                         <div class="work-intro">
                             <h3>SacHacks</h3>
                             <h4>Lead Web Developer</h4>
-                            <h5>November 2020 - Present</h5>
+                            <h5>November 2020 - December 2021</h5>
                             <h5>Davis, CA</h5>
                         </div>
                     </div>

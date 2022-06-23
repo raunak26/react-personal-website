@@ -23,7 +23,7 @@ export default function WorkFive({open, children, onClose}){
                         <div class="work-intro">
                             <h3>Institute of Transportation Studies at UC Davis</h3>
                             <h4>IT Service Desk Analyst</h4>
-                            <h5>January 2020 - Present</h5>
+                            <h5>January 2020 - June 2021</h5>
                             <h5>Davis, CA</h5>
                         </div>
                     </div>

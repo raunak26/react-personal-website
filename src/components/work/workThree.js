@@ -23,7 +23,7 @@ export default function WorkThree({open, children, onClose}){
                         <div class="work-intro">
                             <h3>Women in Data at UC Davis</h3>
                             <h4>Technical Workshops Lead</h4>
-                            <h5>January 2021 - Present</h5>
+                            <h5>January 2021 - June 2022</h5>
                             <h5>Davis, CA</h5>
                         </div>
                     </div>
