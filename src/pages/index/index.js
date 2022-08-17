@@ -24,9 +24,6 @@ const Index = () =>{
 					<div class="index_content">
 						<Index_body />
 					</div>
-					<div class="index_footer">
-						<Footer />
-					</div>
 				</div>
 			</FadeIn>
 		</React.Fragment>
