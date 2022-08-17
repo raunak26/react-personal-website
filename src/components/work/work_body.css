@@ -94,7 +94,7 @@
 .workPopUp-content{
 	display: flex;
 	flex-direction: column;
-	margin-top: -2vw;
+	margin-top: -1vw;
 }
 
 .workPopUp button {
@@ -140,6 +140,13 @@
 	padding-top: 2vw;
 	margin-left: 4vw;
 	margin-right: 3vw;
+}
+
+.microsoft-pop-up{
+	width: 17vw;
+	padding-top: 2vw;
+	margin-left: 4vw;
+	margin-right: 2vw;
 }
 
 .workPopUp-first-row{
@@ -211,10 +218,13 @@
 
 	.workPopUp {
 		top: 19vw;
+		left: 10vw;
+		right: 10vw;
 	}
 
 	.workPopUp button{
-		font-size: 4vw;
+		font-size: 8vw;
+		margin: 2vw;
 	}
 
 	.masterclass-pop-up, .womenindata-pop-up, .include-pop-up{

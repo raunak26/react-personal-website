@@ -10,6 +10,7 @@ import WorkFive from './workFive';
 import WorkSix from './workSix';
 import WorkSeven from './workSeven';
 import WorkEight from './workEight';
+import WorkNine from './workNine';
 
 const Work_body = () =>{
 	const [isOpen1,setIsOpen1] = useState(false)
@@ -28,11 +29,21 @@ const Work_body = () =>{
 
 	const [isOpen8,setIsOpen8] = useState(false)
 
+	const [isOpen9,setIsOpen9] = useState(false)
+
 	return(
 		<React.Fragment>
 			<div class="aboutMe_body">
 				<h1>Work Experience</h1>
 				<div class="work_experience">
+					<button onClick={() => setIsOpen9(true)} class="block">
+							<img src="/images/microsoft.png" alt="microsoft" class = "block-microsoft"/>
+							<div class="block_content">
+								<h3>Microsoft</h3>
+								<h4>Software Engineer, Semantic Machines</h4>
+							</div>
+					</button>
+					<WorkNine open ={isOpen9} onClose = {() => setIsOpen9(false)}></WorkNine>
 					<button onClick={() => setIsOpen8(true)} class="block">
 							<img src="/images/masterclass.svg" alt="masterclass"/>
 							<div class="block_content">

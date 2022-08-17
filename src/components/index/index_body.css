@@ -10,6 +10,7 @@
 	align-items: center;
 	width: 100vw;
 	overflow-x: hidden;
+	justify-content: center;
 }
 
 .text{
@@ -19,14 +20,13 @@
     margin: auto;
     z-index: 5;
     line-height: 1;
-	margin-left: 28vw;
+	/* margin-left: 28vw; */
 }
 
 
 .title-page-name{
 	margin-top: 1vw;
 	font-size: 5vw;
-	margin-bottom: -0.5vw;
 	font-weight: 700;
 }
 
@@ -35,22 +35,21 @@
 }
 
 .Raunak-Anand{
+	margin-top: -20vw;
 	padding: 0.5vw;
 	width: 35vw;
 	height: auto;
 	border-radius: 50vw;
 	border: 0.3vw solid white;
+	margin-bottom: 2vw;
 }
 
-.social-logos{
+.first-page-logos{
+	color: white;
+	height: 5vw;
+	margin-left: 3vw;
+	margin-right: 3vw;
 	margin-top: 3vw;
-}
-
-.logos{
-	width: 5vw;
-	margin-left: 1vw;
-	margin-right: 1vw;
-	margin-bottom: 5vw;
 }
 
 #particles-js{
@@ -60,9 +59,12 @@
 
 @media (min-width:760px) {
 	.text{
-		margin-left: 34vw;
+		/* margin-left: 34vw; */
+		margin: auto;
+
 	}
 	.title-page-name{
+		margin-top: 0vw;
 		font-size: 3.5vw;
 	}
 
@@ -72,14 +74,14 @@
 
 	.Raunak-Anand{
 		width: 20vw;
+		margin-top: 0vw;
 	}
 
-	.social-logos{
-		margin-top: 2.5vw;
-	}
-
-	.logos{
-		width: 3vw;
+	.first-page-logos{
+		height: 3vw;
+		margin: 1vw;
+		margin-left: 2vw;
+		margin-right: 2vw;
 	}
 
 }
