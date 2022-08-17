@@ -1,6 +1,6 @@
 {
-  "short_name": "Raunak Anand",
-  "name": "Hi👋 My name is Raunak Anand! Welcome to my website! I’m a rising senior studying Computer Science and Statistics at UC Davis. I’m interested in AR/VR and ML!",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "RaunakAnand.png",
+      "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "RaunakAnand.png",
+      "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
