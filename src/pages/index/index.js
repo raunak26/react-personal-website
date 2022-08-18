@@ -6,7 +6,7 @@ import MetaTags from 'react-meta-tags';
 import FadeIn from 'react-fade-in';
 
 import Index_body from '../../components/index/index_body';
-import Footer from '../../components/footer/footer';
+import Copyright from '../../components/footer/copyright';
 import Navbar from '../../components/navbar/navbar';
 
 const Index = () =>{
@@ -23,6 +23,9 @@ const Index = () =>{
 					<Navbar />
 					<div class="index_content">
 						<Index_body />
+					</div>
+					<div class="index_footer">
+						<Copyright />			
 					</div>
 				</div>
 			</FadeIn>

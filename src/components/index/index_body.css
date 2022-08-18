@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
 
 .index_body{
-	background-image: linear-gradient(to bottom, #000000, #000000, 
+	background-image: linear-gradient(to bottom, #000000, #000000, #000000,
 		#250d18, #400e2d, #5a0e48, #71116a, #76107c, #791390, #771aa6, 
 		#6916aa, #5814af, #4114b3, #1716b8, #000000);
 	position: relative;
@@ -49,39 +49,58 @@
 	height: 5vw;
 	margin-left: 3vw;
 	margin-right: 3vw;
-	margin-top: 3vw;
+}
+
+.fp-fa-Linkedin:hover{
+	color: #0072b1;
+}
+
+.fp-fa-Github:hover{
+	color: #171515;
+}
+
+.fp-fa-Envelope:hover{
+	color: #e7c9a9;
+}
+
+.fp-fa-Spotify:hover{
+	color: #1DB954;
+}
+
+.fp-fa-Twitter:hover{
+	color: #1DA1F2;
 }
 
 #particles-js{
-	height: 90vh;
+	margin-top: 14vh;
+	height: 86vh;
 	width: 100vw;
 }
 
 @media (min-width:760px) {
 	.text{
-		/* margin-left: 34vw; */
 		margin: auto;
 
 	}
 	.title-page-name{
 		margin-top: 0vw;
-		font-size: 3.5vw;
+		font-size: 3vw;
 	}
 
 	.text h2{
-		font-size: 2vw;
+		font-size: 1.5vw;
 	}
 
 	.Raunak-Anand{
-		width: 20vw;
+		width: 16vw;
 		margin-top: 0vw;
 	}
 
 	.first-page-logos{
-		height: 3vw;
+		height: 2.7vw;
 		margin: 1vw;
-		margin-left: 2vw;
-		margin-right: 2vw;
+		margin-left: 1.7vw;
+		margin-right: 1.7vw;
 	}
 
 }

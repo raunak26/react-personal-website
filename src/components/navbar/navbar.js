@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Burger from './Burger';
 
 const NavMobile = styled.nav`
+  position: fixed;
+  width: 95%;
   text-align: center;
   z-index: 22;
   height: 90px;
@@ -17,24 +19,35 @@ const NavMobile = styled.nav`
     border-radius: 50%;
     background-color: #ffffff;
   }
+  
   .menu-web{
     display: flex;
   }
   .menu-mobile{
     display: none;
   }
+
   @media (max-width: 776px) {
     text-align: center;
     align-items: center;
     .logo{
-      margin-left: -10vw;
       width: 100%;
+      margin-right: 10vw;
     }
     .menu-web{
       display: none;
     }
     .menu-mobile{
       display: flex;
+    }
+  }
+
+  @media (max-width: 320px) {
+    text-align: center;
+    align-items: center;
+    .logo{
+      width: 100%;
+      margin-right: 30vw;
     }
   }
 `

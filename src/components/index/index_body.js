@@ -76,11 +76,11 @@ const Index_body = () =>{
 						<h2>UC Davis Computer Science Graduate</h2>
 
                     	<div className="social-logos">
-							<a href="https://www.linkedin.com/in/raunak-anand/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} className = "first-page-logos"></FontAwesomeIcon></a>
-							<a href="https://github.com/raunak26" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} className = "first-page-logos"></FontAwesomeIcon></a>
-							<a href="mailto:anandraunak2000@gmail.com" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faEnvelope} className = "first-page-logos"></FontAwesomeIcon></a>
-							<a href="https://open.spotify.com/user/31dxduls3536yktvdp5baavgr5ca" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faSpotify} className = "first-page-logos"></FontAwesomeIcon></a>
-							<a href="https://twitter.com/raunakanandsahu" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitterSquare} className = "first-page-logos"></FontAwesomeIcon></a>
+							<a href="https://www.linkedin.com/in/raunak-anand/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} className = "first-page-logos fp-fa-Linkedin"></FontAwesomeIcon></a>
+							<a href="https://github.com/raunak26" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} className = "first-page-logos fp-fa-Github"></FontAwesomeIcon></a>
+							<a href="mailto:anandraunak2000@gmail.com" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faEnvelope} className = "first-page-logos fp-fa-Envelope"></FontAwesomeIcon></a>
+							<a href="https://open.spotify.com/user/31dxduls3536yktvdp5baavgr5ca" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faSpotify} className = "first-page-logos fp-fa-Spotify"></FontAwesomeIcon></a>
+							<a href="https://twitter.com/raunakanandsahu" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitterSquare} className = "first-page-logos fp-fa-Twitter"></FontAwesomeIcon></a>
                     	</div>
 
                 	</div>
