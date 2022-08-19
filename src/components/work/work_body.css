@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
 
 .aboutMe_body{
-	padding-top: 12vh;
 	background-image: linear-gradient(to bottom, #000000, #000000, 
 		#250d18, #400e2d, #5a0e48, #71116a, #76107c, #791390, #771aa6, 
 		#6916aa, #5814af, #4114b3, #1716b8, #000000);
@@ -12,6 +11,7 @@
 }
 
 .aboutMe_body h1{
+	margin-top: 20vh;
 	font-family: 'M PLUS Rounded 1c', sans-serif;
 	color: white;
 	margin-left: 8vw;
