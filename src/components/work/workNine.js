@@ -18,21 +18,23 @@ export default function WorkNine({open, children, onClose}){
 	        <div className="workPopUp">
 				<button onClick={onClose}>&#x2715;</button>
                 <div className="workPopUp-content">
-                    <div class="workPopUp-first-row">
-                        <img src="/images/microsoft.png" class="microsoft-pop-up" alt="microsoft"/>
-                        <div class="work-intro">
+                    <div className="workPopUp-first-row">
+                        <img src="/images/microsoft.png" className="microsoft-pop-up" alt="microsoft"/>
+                        <div className="work-intro">
                             <h3>Microsoft</h3>
-                            <h4>Software Engineer, Semantic Machines</h4>
-                            <h5>August 2022 - Present</h5>
-                            <h5>San Francisco Bay Area</h5>
+                            <h4>Software Engineer, M365 Copilot AI Evaluation</h4>
+                            <h5>December 2023 - Present</h5>
+                            <h5>Mountain View, CA</h5>
                         </div>
                     </div>
-                    <div class="workPopUp-second-row">
+                    <div className="workPopUp-second-row">
                         <ul>
-                            <li>Conversational AI</li>
+                            <li>Increased ad revenue by ~12% by optimizing LLM-generated user summaries to enable shorter Copilot replies and more personalized ad delivery.</li>
+                            <li>Built an automated system to detect LLM regressions across Microsoft 365 Copilot, reducing triage time by 60% and improving rollout safety through real-time alerts and behavior comparisons.</li>
+                            <li>Optimized workflows that evaluate LLMs, cutting job runtime by 31% and increasing throughput by 50%, enabling faster performance testing and validation at scale.</li>
                         </ul>
                     </div>
-                    <a href="https://www.microsoft.com/en-us/research/project/semantic-machines/">https://www.microsoft.com/en-us/research/project/semantic-machines/</a>
+                    <a href="https://www.microsoft.com/">https://www.microsoft.com/</a>
                 </div>
 			</div>
         </div>

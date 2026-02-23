@@ -18,16 +18,16 @@ export default function WorkThree({open, children, onClose}){
 	        <div className="workPopUp">
 				<button onClick={onClose}>&#x2715;</button>
                 <div className="workPopUp-content">
-                    <div class="workPopUp-first-row">
-                        <img src="/images/womenindata.png" class="womenindata-pop-up" alt="womenindata"/>
-                        <div class="work-intro">
+                    <div className="workPopUp-first-row">
+                        <img src="/images/womenindata.png" className="womenindata-pop-up" alt="womenindata"/>
+                        <div className="work-intro">
                             <h3>Women in Data at UC Davis</h3>
                             <h4>Technical Workshops Lead</h4>
                             <h5>January 2021 - June 2022</h5>
                             <h5>Davis, CA</h5>
                         </div>
                     </div>
-                    <div class="workPopUp-second-row">
+                    <div className="workPopUp-second-row">
                         <ul>
                             <li>Conducted a series of Python and Jupyter tutorial workshops and increased total club membership by 85%.</li>
                             <li>Developed a machine-learning algorithm to detect Alzheimer’s disease based on a Kaggle dataset.</li>

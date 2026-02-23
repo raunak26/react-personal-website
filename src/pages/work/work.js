@@ -1,7 +1,6 @@
 import './work.css';
 
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import MetaTags from 'react-meta-tags';
 import FadeIn from 'react-fade-in';
 
@@ -16,15 +15,15 @@ const Work = () =>{
 				<div className="work">
 					<MetaTags>
 			            <title>Raunak Anand</title>
-			            <meta name="description" content="Hi👋 My name is Raunak Anand! Welcome to my website! I’m a rising senior studying Computer Science and Statistics at UC Davis. I’m interested in AR/VR and ML!" />
+			            <meta name="description" content="Raunak Anand — Applied Evals @ OpenAI and M.S. candidate in Computer Science at the University of Pennsylvania. I design model evaluations that make LLM quality measurable, reliable, and actionable." />
 			            <meta property="og:title" content="Raunak Anand" />
-			            <meta property="og:image" content="images/me.png" />
+			            <meta property="og:image" content="images/profile.jpg" />
 			         </MetaTags>
 					<Navbar />
-					<div class="work_content">
+					<div className="work_content">
 						<Work_body />
 					</div>
-					<div class="work_footer">
+					<div className="work_footer">
 						<Footer />
 					</div>
 				</div>

@@ -3,48 +3,60 @@ import styled from 'styled-components';
 
 const Ul = styled.ul`
   position: static;
-  margin-top: 0px;
+  margin: 0;
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
+  gap: 0.7rem;
   z-index: 22;
+
   li {
-    padding: 30px 25px;
+    padding: 0;
   }
-  li:active{
-    text-decoration: underline;
-    text-decoration-color: black;
-  }
+
   li a {
-    font-family: 'M PLUS Rounded 1c';
-    font-weight: bold;
-    font-size: 18px;
-    color: white;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.62rem 1rem;
+    border-radius: 999px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 0.86rem;
+    color: var(--text);
     text-decoration: none;
+    border: 1px solid var(--line);
+    background: var(--nav-pill-bg);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   }
+
   li a:hover {
-    color: 37392E;
-    text-decoration: underline;
-    text-decoration-color: white;
+    transform: translateY(-1px);
+    border-color: rgba(36, 70, 216, 0.34);
+    box-shadow: 0 12px 24px rgba(30, 44, 86, 0.12);
   }
-  li a:active {
-    text-decoration: underline;
-    text-decoration-color: white;
-  }
+
   @media (max-width: 776px) {
-    margin-top: 90px;
+    margin-top: 70px;
     flex-flow: column nowrap;
-    background-color: black;
+    align-items: stretch;
+    gap: 0.6rem;
+    background: var(--nav-bg-strong);
+    border-bottom: 1px solid var(--nav-line);
     position: fixed;
-    transform: ${({ open }) => open ? 'translateY(0)' : 'translateY(-150%)'};
+    transform: ${({ open }) => open ? 'translateY(0)' : 'translateY(-130%)'};
     top: 0;
     right: 0;
-    height: 40vh;
-    width: 100vw; 
-    padding-top: 2rem;
-    transition: transform 0.5s ease-in-out;
-    li {
-      color: white;
+    left: 0;
+    padding: 1rem;
+    transition: transform 0.35s ease-in-out;
+
+    li a {
+      width: 100%;
+      justify-content: center;
+      border-radius: 14px;
+      font-size: 0.84rem;
+      background: var(--surface-strong);
     }
   }
 `;
@@ -52,10 +64,11 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li><a href="/work">Work</a></li>
+      <li><a href="/#home">Home</a></li>
+      <li><a href="/#work">Work</a></li>
       <li><a href="/RaunakAnand_Resume.pdf" target="_blank" rel="noreferrer">Resume</a></li>
     </Ul>
-  )
-}
+  );
+};
 
 export default RightNav;

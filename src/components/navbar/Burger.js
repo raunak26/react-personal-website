@@ -2,34 +2,39 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import RightNav from './RightNav';
 
-const StyledBurger = styled.div`
-  align-items: left;
+const StyledBurger = styled.button`
   width: 2rem;
   height: 2rem;
-  top: 27px;
-  left: 20px;
-  z-index: 20;
+  z-index: 24;
   display: none;
-  color: white;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+
   @media (max-width: 776px) {
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
   }
+
   div {
     width: 2rem;
-    height: 0.25rem;
-    background-color: ${({ open }) => open ? '#ffffff' : '#ffffff'};
+    height: 0.2rem;
+    background-color: var(--text);
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
+
     &:nth-child(1) {
       transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
     }
+
     &:nth-child(2) {
       transform: ${({ open }) => open ? 'translateX(-100%)' : 'translateX(0)'};
       opacity: ${({ open }) => open ? 0 : 1};
     }
+
     &:nth-child(3) {
       transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
     }
@@ -37,18 +42,18 @@ const StyledBurger = styled.div`
 `;
 
 const Burger = () => {
-  const [open, setOpen] = useState(false)
-  
+  const [open, setOpen] = useState(false);
+
   return (
     <>
-      <StyledBurger open={open} onClick={() => setOpen(!open)}>
+      <StyledBurger open={open} onClick={() => setOpen(!open)} aria-label="Toggle navigation menu">
         <div />
         <div />
         <div />
       </StyledBurger>
       <RightNav open={open}/>
     </>
-  )
-}
+  );
+};
 
 export default Burger;
