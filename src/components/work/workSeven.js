@@ -18,16 +18,16 @@ export default function WorkSeven({open, children, onClose}){
 	        <div className="workPopUp">
 				<button onClick={onClose}>&#x2715;</button>
                 <div className="workPopUp-content">
-                    <div class="workPopUp-first-row">
-                        <img src="/images/renewbuy.png" class="renewbuy-pop-up" alt="renewbuy"/>
-                        <div class="work-intro">
+                    <div className="workPopUp-first-row">
+                        <img src="/images/renewbuy.png" className="renewbuy-pop-up" alt="renewbuy"/>
+                        <div className="work-intro">
                             <h3>RenewBuy</h3>
                             <h4>Data Analyst Intern</h4>
                             <h5>May 2016 - July 2016</h5>
                             <h5>Gurgaon, Haryana</h5>
                         </div>
                     </div>
-                    <div class="workPopUp-second-row">
+                    <div className="workPopUp-second-row">
                         <ul>
                             <li>Created mobile app, using Java, focussed on creating a platform for announcements for high schools to increase the accessibility of information.</li>
                             <li>Improved website UI and UX based on customer buying behavior, TOS (time-on-site) to improve marketing and increase outreach</li>

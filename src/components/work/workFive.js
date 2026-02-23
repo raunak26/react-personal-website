@@ -18,16 +18,16 @@ export default function WorkFive({open, children, onClose}){
 	        <div className="workPopUp">
 				<button onClick={onClose}>&#x2715;</button>
                 <div className="workPopUp-content">
-                    <div class="workPopUp-first-row">
-                        <img src="/images/its.png" class="its-pop-up" alt="ITS"/>
-                        <div class="work-intro">
+                    <div className="workPopUp-first-row">
+                        <img src="/images/its.png" className="its-pop-up" alt="ITS"/>
+                        <div className="work-intro">
                             <h3>Institute of Transportation Studies at UC Davis</h3>
                             <h4>IT Service Desk Analyst</h4>
                             <h5>January 2020 - June 2021</h5>
                             <h5>Davis, CA</h5>
                         </div>
                     </div>
-                    <div class="workPopUp-second-row">
+                    <div className="workPopUp-second-row">
                         <ul>
                             <li>Provided technical support to critical IT operations at the UC Davis College of Engineering.</li>
                             <li>Worked through the COVID-19 situations and provided 100% service even while working remotely and following business continuity processes.</li>

@@ -1,11 +1,40 @@
-:root {
-	background: #000000;
+.index {
+	min-height: 100vh;
 }
-.index_footer{
-	position: relative;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 5vh;
-	background-color: #000000;
+
+.index_content {
+	min-height: calc(100vh - 84px);
+	min-height: calc(100svh - 84px);
+	margin-top: 84px;
+	padding: 1.5rem 1.25rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.index_work {
+	padding: 2rem 1.25rem 0.5rem;
+}
+
+.index_footer {
+	margin-top: 0.25rem;
+}
+
+#home,
+#work {
+	scroll-margin-top: 96px;
+}
+
+@media (max-width: 760px) {
+	.index_content {
+		min-height: calc(100vh - 74px);
+		min-height: calc(100svh - 74px);
+		margin-top: 74px;
+		padding: 1rem 1rem 1.25rem;
+	}
+
+	.index_work {
+		padding: 1.5rem 1rem 0.25rem;
+	}
 }

@@ -1,27 +1,20 @@
-.copright{
-    background-color: #000000;
+.copyright {
 	display: flex;
-	flex-direction: column;
-	padding-bottom: 3vw;
-	margin: auto;
-	position: static;
-  	left: 0;
-  	bottom: 0;
-  	width: 100%;
+	justify-content: center;
+	padding-bottom: 2rem;
 }
 
-.copyright p{
-    background-color: #000000;
-    margin-top: -0.1vw;
-    padding-top: 2vw;
-    font-family: 'M PLUS Rounded 1c';
-	color: #ffffff;
-	font-size: 1vw;
-    padding-bottom: 3vw;
+.copyright p {
+	margin: 0;
+	font-family: 'Space Grotesk', sans-serif;
+	color: var(--muted);
+	font-size: 0.8rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
 }
 
-@media (max-width:760px) {
-	.copyright p{
-		font-size: 2vw;
+@media (max-width: 760px) {
+	.copyright p {
+		font-size: 0.72rem;
 	}
 }

@@ -4,55 +4,130 @@ import Burger from './Burger';
 
 const NavMobile = styled.nav`
   position: fixed;
-  width: 95%;
-  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 22;
-  height: 90px;
-  padding: 0 40px;
+  height: 84px;
+  padding: 0 24px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  background-color: #000000;
-  .logo img{
-    width: 60px;
-    height: auto;
-    margin: 8px 0px;
-    border-radius: 50%;
-    background-color: #ffffff;
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--nav-line);
+  backdrop-filter: blur(10px);
+
+  .logo {
+    display: flex;
+    align-items: center;
   }
-  
-  .menu-web{
+
+  .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 16px;
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-soft);
+    background: var(--surface-strong);
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+  }
+
+  .theme-toggle {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 64px;
+    height: 38px;
+    padding: 0 4px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: #f1f3f7;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+
+  .theme-toggle[data-theme='dark'] {
+    background: #0f1014;
+  }
+
+  .theme-toggle::after {
+    content: '';
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    background: #0f1014;
+    transform: translateX(0);
+    transition: transform 0.22s ease, background-color 0.22s ease;
+  }
+
+  .theme-toggle[data-theme='dark']::after {
+    transform: translateX(26px);
+    background: #f8f9fc;
+  }
+
+  .theme-toggle:hover {
+    transform: translateY(-1px);
+    border-color: rgba(36, 70, 216, 0.34);
+    box-shadow: 0 10px 20px rgba(30, 44, 86, 0.12);
+  }
+
+  .theme-toggle:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .menu-web {
     display: flex;
   }
-  .menu-mobile{
+
+  .menu-mobile {
     display: none;
   }
 
   @media (max-width: 776px) {
-    text-align: center;
-    align-items: center;
-    .logo{
-      width: 100%;
-      margin-right: 10vw;
+    height: 74px;
+    padding: 0 16px;
+
+    .logo {
+      margin: 0 auto;
     }
-    .menu-web{
+
+    .menu-web {
       display: none;
     }
-    .menu-mobile{
+
+    .menu-mobile {
       display: flex;
     }
-  }
 
-  @media (max-width: 320px) {
-    text-align: center;
-    align-items: center;
-    .logo{
-      width: 100%;
-      margin-right: 30vw;
+    .nav-actions {
+      gap: 0.35rem;
+    }
+
+    .theme-toggle {
+      width: 58px;
+      height: 34px;
+      padding: 0 3px;
+    }
+
+    .theme-toggle::after {
+      width: 26px;
+      height: 26px;
+    }
+
+    .theme-toggle[data-theme='dark']::after {
+      transform: translateX(23px);
     }
   }
-`
+`;
 
-const Navbar = () => {
+const Navbar = ({ theme = 'light', onToggleTheme = () => {} }) => {
   return (
     <NavMobile>
       <div className="menu-mobile">
@@ -61,11 +136,14 @@ const Navbar = () => {
       <div className="logo">
         <a href="/"><img src="images/me.png" alt="bitmoji"/></a>
       </div>
-      <div className="menu-web">
-        <Burger />
+      <div className="nav-actions">
+        <div className="menu-web">
+          <Burger />
+        </div>
+        <button className="theme-toggle" data-theme={theme} onClick={onToggleTheme} aria-label="Toggle color theme" aria-pressed={theme === 'dark'} />
       </div>
     </NavMobile>
-  )
-}
+  );
+};
 
 export default Navbar;

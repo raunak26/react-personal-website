@@ -18,16 +18,16 @@ export default function WorkSix({open, children, onClose}){
 	        <div className="workPopUp">
 				<button onClick={onClose}>&#x2715;</button>
                 <div className="workPopUp-content">
-                    <div class="workPopUp-first-row">
-                        <img src="/images/airtel.png" class="airtel-pop-up" alt="airtel"/>
-                        <div class="work-intro">
+                    <div className="workPopUp-first-row">
+                        <img src="/images/airtel.png" className="airtel-pop-up" alt="airtel"/>
+                        <div className="work-intro">
                             <h3>Bharti Airtel - Wynk Limited</h3>
                             <h4>Software Engineering Intern</h4>
                             <h5>July 2019 - August 2019</h5>
                             <h5>Delhi, India</h5>
                         </div>
                     </div>
-                    <div class="workPopUp-second-row">
+                    <div className="workPopUp-second-row">
                         <ul>
                             <li>Developed hardware that allowed multiple website streaming, increasing the time-shift television market by 89%.</li>
                             <li>Implemented near real-time responsive voice recognition and universal music search on Airtel TV hardware.</li>

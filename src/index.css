@@ -1,13 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  --bg: #f5f2ea;
+  --surface: rgba(255, 255, 255, 0.78);
+  --surface-strong: #ffffff;
+  --text: #17181f;
+  --muted: #63687a;
+  --line: rgba(24, 29, 47, 0.12);
+  --accent: #2446d8;
+  --accent-soft: #dce4ff;
+  --nav-bg: rgba(251, 248, 242, 0.8);
+  --nav-bg-strong: rgba(251, 248, 242, 0.95);
+  --nav-line: rgba(24, 29, 47, 0.1);
+  --nav-pill-bg: rgba(255, 255, 255, 0.74);
+  --bg-grad-a: #e4ecff;
+  --bg-grad-b: #ffe8da;
+  --bg-grad-top: #fbf8f2;
+  --bg-grad-bottom: #f3f0e8;
+  --radius-xl: 32px;
+  --radius-lg: 24px;
+  --shadow-soft: 0 24px 60px rgba(14, 22, 42, 0.12);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+[data-theme='dark'] {
+  --bg: #0d111a;
+  --surface: rgba(22, 27, 40, 0.78);
+  --surface-strong: #1c2436;
+  --text: #f1f4ff;
+  --muted: #a2afca;
+  --line: rgba(164, 181, 224, 0.2);
+  --accent: #8ca8ff;
+  --accent-soft: rgba(95, 125, 219, 0.22);
+  --nav-bg: rgba(13, 17, 26, 0.84);
+  --nav-bg-strong: rgba(13, 17, 26, 0.96);
+  --nav-line: rgba(164, 181, 224, 0.2);
+  --nav-pill-bg: rgba(29, 38, 57, 0.86);
+  --bg-grad-a: #1b2753;
+  --bg-grad-b: #2d1d38;
+  --bg-grad-top: #0d111a;
+  --bg-grad-bottom: #111827;
+  --shadow-soft: 0 24px 60px rgba(1, 2, 6, 0.48);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: 'Manrope', sans-serif;
+  background:
+    radial-gradient(circle at 8% 8%, var(--bg-grad-a) 0%, rgba(228, 236, 255, 0) 42%),
+    radial-gradient(circle at 90% 18%, var(--bg-grad-b) 0%, rgba(255, 232, 218, 0) 46%),
+    linear-gradient(180deg, var(--bg-grad-top) 0%, var(--bg-grad-bottom) 100%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+a {
+  color: inherit;
 }

@@ -18,16 +18,16 @@ export default function WorkFour({open, children, onClose}){
 	        <div className="workPopUp">
 				<button onClick={onClose}>&#x2715;</button>
                 <div className="workPopUp-content">
-                    <div class="workPopUp-first-row">
-                        <img src="/images/sachacks.png" class="sachacks-pop-up" alt="SacHacks"/>
-                        <div class="work-intro">
+                    <div className="workPopUp-first-row">
+                        <img src="/images/sachacks.png" className="sachacks-pop-up" alt="SacHacks"/>
+                        <div className="work-intro">
                             <h3>SacHacks</h3>
                             <h4>Lead Web Developer</h4>
                             <h5>November 2020 - December 2021</h5>
                             <h5>Davis, CA</h5>
                         </div>
                     </div>
-                    <div class="workPopUp-second-row">
+                    <div className="workPopUp-second-row">
                         <ul>
                             <li>Increased hackathon participation by 45% through UI/UX improvement and Google Analytics implementation.</li>
                             <li>Developed website for Lovelace hackathon, organized to represent women and minor communities.</li>

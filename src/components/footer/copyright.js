@@ -3,10 +3,11 @@ import './copyright.css';
 import React from 'react';
 
 const Copyright = () =>{
+	const year = new Date().getFullYear();
 	return(
 		<React.Fragment>
 			<div className="copyright">
-				<p>© 2021 Raunak Anand</p>
+				<p>© {year} Raunak Anand</p>
 			</div>
 		</React.Fragment>
 	);
