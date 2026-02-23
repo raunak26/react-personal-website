@@ -102,21 +102,6 @@
         transition: opacity 360ms ease;
       }
 
-      @media (prefers-color-scheme: dark) {
-        #preloader {
-          --loader-bg-a: rgba(102, 132, 255, 0.22);
-          --loader-bg-b: rgba(42, 192, 158, 0.18);
-          --loader-bg-top: #0d111a;
-          --loader-bg-bottom: #111827;
-          --loader-text: #e7ecff;
-          --loader-ring-border: rgba(140, 168, 255, 0.55);
-          --loader-ring-glow: rgba(140, 168, 255, 0.3);
-          --loader-pitch: rgba(203, 216, 255, 0.3);
-          --loader-node-a: #5ee1c4;
-          --loader-node-b: #9ab0ff;
-        }
-      }
-
       html[data-theme='dark'] #preloader {
         --loader-bg-a: rgba(102, 132, 255, 0.22);
         --loader-bg-b: rgba(42, 192, 158, 0.18);
@@ -316,6 +301,28 @@
         100% {
           left: calc(100% - 34px);
           transform: translateY(0) rotate(520deg);
+        }
+      }
+
+      @media (max-width: 760px) {
+        #preloader .loader-stage {
+          height: 124px;
+        }
+
+        #preloader .ai-ring {
+          animation-duration: 1.35s;
+        }
+
+        #preloader .ai-ring::before {
+          animation-duration: 1.6s;
+        }
+
+        #preloader .ai-orbit {
+          animation-duration: 2.4s;
+        }
+
+        #preloader .ball {
+          animation-duration: 1.35s;
         }
       }
     </style>
