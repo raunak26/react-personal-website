@@ -18,7 +18,9 @@ const Index = ({ theme, onToggleTheme }) =>{
 			            <title>Raunak Anand</title>
 			            <meta name="description" content="Raunak Anand — Applied Evals @ OpenAI and M.S. candidate in Computer Science at the University of Pennsylvania. I design model evaluations that make LLM quality measurable, reliable, and actionable." />
 			            <meta property="og:title" content="Raunak Anand" />
-			            <meta property="og:image" content="images/profile.jpg" />
+			            <meta property="og:image" content="/images/profile.jpg" />
+			            <meta name="twitter:card" content="summary_large_image" />
+			            <meta name="twitter:image" content="/images/profile.jpg" />
 			         </MetaTags>
 					<Navbar theme={theme} onToggleTheme={onToggleTheme} />
 					<section id="home" className="index_content">

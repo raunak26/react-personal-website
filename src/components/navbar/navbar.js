@@ -49,6 +49,7 @@ const NavMobile = styled.nav`
     border: 1px solid var(--line);
     background: #f1f3f7;
     cursor: pointer;
+    overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   }
 
@@ -56,19 +57,25 @@ const NavMobile = styled.nav`
     background: #0f1014;
   }
 
-  .theme-toggle::after {
-    content: '';
+  .theme-toggle .toggle-knob {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 28px;
     height: 28px;
     border-radius: 999px;
     background: #0f1014;
+    color: #f8f9fc;
+    font-size: 0.95rem;
+    line-height: 1;
     transform: translateX(0);
-    transition: transform 0.22s ease, background-color 0.22s ease;
+    transition: transform 0.22s ease, background-color 0.22s ease, color 0.22s ease;
   }
 
-  .theme-toggle[data-theme='dark']::after {
+  .theme-toggle[data-theme='dark'] .toggle-knob {
     transform: translateX(26px);
     background: #f8f9fc;
+    color: #0f1014;
   }
 
   .theme-toggle:hover {
@@ -116,12 +123,13 @@ const NavMobile = styled.nav`
       padding: 0 3px;
     }
 
-    .theme-toggle::after {
+    .theme-toggle .toggle-knob {
       width: 26px;
       height: 26px;
+      font-size: 0.88rem;
     }
 
-    .theme-toggle[data-theme='dark']::after {
+    .theme-toggle[data-theme='dark'] .toggle-knob {
       transform: translateX(23px);
     }
   }
@@ -140,7 +148,9 @@ const Navbar = ({ theme = 'light', onToggleTheme = () => {} }) => {
         <div className="menu-web">
           <Burger />
         </div>
-        <button className="theme-toggle" data-theme={theme} onClick={onToggleTheme} aria-label="Toggle color theme" aria-pressed={theme === 'dark'} />
+        <button className="theme-toggle" data-theme={theme} onClick={onToggleTheme} aria-label="Toggle color theme" aria-pressed={theme === 'dark'}>
+          <span className="toggle-knob" aria-hidden="true">{theme === 'dark' ? '🌙' : '☀️'}</span>
+        </button>
       </div>
     </NavMobile>
   );

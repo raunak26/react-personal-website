@@ -13,7 +13,7 @@ const Index_body = () => {
 				<div className="hero-glow hero-glow-left"></div>
 				<div className="hero-glow hero-glow-right"></div>
 				<div className="hero-card" data-aos="fade-up">
-					<p className="hero-eyebrow">Applied Evals @ OpenAI • Model Evaluation</p>
+					<p className="hero-eyebrow">Applied AI @ OpenAI • Model Evaluation</p>
 					<div className="title-page-name">
 						<ReactTypingEffect
 							text={["Raunak Anand", "रौनक आनंद", "ରୋନକ ଆନନ୍ଦ"]}
@@ -22,15 +22,18 @@ const Index_body = () => {
 							typingDelay={(600)}
 						/>
 					</div>
+					<p className="hero-role">
+						Building model evaluations at <strong>OpenAI</strong> that make LLM quality measurable, reliable, and actionable.
+					</p>
 					<p className="hero-description">
 						M.S. candidate in Computer Science at the University of Pennsylvania.
-						I design model evaluations that make LLM quality measurable, reliable, and actionable.
 					</p>
 					<div className="hero-tags">
 						<span>Conversational AI</span>
 						<span>Model Evaluation</span>
 						<span>Software Engineering</span>
 						<span>Product Thinking</span>
+						<span>LLMs</span>
 					</div>
 					<div className="hero-actions">
 						<a href="/#work" className="hero-button hero-button-primary">Explore Work</a>

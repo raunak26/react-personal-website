@@ -18,6 +18,9 @@ const Ul = styled.ul`
   li a {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
     padding: 0.62rem 1rem;
     border-radius: 999px;
     font-family: 'Space Grotesk', sans-serif;
@@ -27,33 +30,48 @@ const Ul = styled.ul`
     text-decoration: none;
     border: 1px solid var(--line);
     background: var(--nav-pill-bg);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease, color 0.22s ease;
+  }
+
+  li a::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(36, 70, 216, 0) 20%, rgba(140, 168, 255, 0.24) 50%, rgba(36, 70, 216, 0) 80%);
+    transform: translateX(-125%);
+    transition: transform 0.45s ease;
+    pointer-events: none;
   }
 
   li a:hover {
-    transform: translateY(-1px);
-    border-color: rgba(36, 70, 216, 0.34);
-    box-shadow: 0 12px 24px rgba(30, 44, 86, 0.12);
+    transform: translateY(-2px) scale(1.02);
+    color: var(--accent);
+    border-color: rgba(36, 70, 216, 0.45);
+    box-shadow: 0 14px 28px rgba(36, 70, 216, 0.2);
+  }
+
+  li a:hover::before {
+    transform: translateX(125%);
   }
 
   @media (max-width: 776px) {
-    margin-top: 70px;
+    margin-top: 0;
     flex-flow: column nowrap;
     align-items: stretch;
     gap: 0.6rem;
     background: var(--nav-bg-strong);
     border-bottom: 1px solid var(--nav-line);
     position: fixed;
-    transform: ${({ open }) => open ? 'translateY(0)' : 'translateY(-130%)'};
+    transform: ${({ open }) => open ? 'translateY(0)' : 'translateY(-100%)'};
     top: 0;
     right: 0;
     left: 0;
-    padding: 1rem;
+    z-index: 21;
+    padding: calc(74px + 1rem) 1rem 1rem;
     transition: transform 0.35s ease-in-out;
 
     li a {
       width: 100%;
-      justify-content: center;
       border-radius: 14px;
       font-size: 0.84rem;
       background: var(--surface-strong);
