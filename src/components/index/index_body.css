@@ -254,7 +254,8 @@
 	}
 
 	.social-logos {
-		justify-content: flex-start;
+		justify-content: center;
+		width: 100%;
 		flex-wrap: wrap;
 		gap: 1rem;
 	}

@@ -41,6 +41,228 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <style>
+      #preloader {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        background:
+          radial-gradient(circle at 18% 16%, rgba(36, 70, 216, 0.18) 0%, rgba(36, 70, 216, 0) 42%),
+          radial-gradient(circle at 82% 26%, rgba(26, 179, 148, 0.2) 0%, rgba(26, 179, 148, 0) 44%),
+          linear-gradient(180deg, #f7f4ee 0%, #f1ece3 100%);
+        color: #17181f;
+        z-index: 9999;
+        transition: opacity 360ms ease;
+      }
+
+      #preloader.fade-out {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      #preloader .loader-stage {
+        position: relative;
+        width: min(76vw, 420px);
+        height: 140px;
+      }
+
+      #preloader .ai-ring {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 92px;
+        height: 92px;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        border: 2px solid rgba(36, 70, 216, 0.34);
+        box-shadow: 0 0 0 0 rgba(36, 70, 216, 0.22);
+        animation: ring-pulse 1.8s ease-out infinite;
+      }
+
+      #preloader .ai-ring::before,
+      #preloader .ai-ring::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+      }
+
+      #preloader .ai-ring::before {
+        inset: 14px;
+        border: 2px dashed rgba(26, 179, 148, 0.55);
+        animation: spin 2.2s linear infinite;
+      }
+
+      #preloader .ai-ring::after {
+        inset: 32px;
+        background: radial-gradient(circle at 30% 30%, #2d57ff, #2446d8 70%);
+        filter: drop-shadow(0 8px 15px rgba(36, 70, 216, 0.32));
+      }
+
+      #preloader .ai-core-label {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font: 800 0.72rem/1 "Manrope", sans-serif;
+        letter-spacing: 0.12em;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+        z-index: 2;
+      }
+
+      #preloader .ai-orbit {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 124px;
+        height: 124px;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        border: 1px solid rgba(36, 70, 216, 0.2);
+        animation: spin 3.4s linear infinite;
+      }
+
+      #preloader .ai-node {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #1ab394;
+        box-shadow: 0 0 10px rgba(26, 179, 148, 0.5);
+      }
+
+      #preloader .ai-node.node-1 {
+        left: calc(50% - 4px);
+        top: -4px;
+      }
+
+      #preloader .ai-node.node-2 {
+        left: -4px;
+        top: calc(50% - 4px);
+        background: #2446d8;
+        box-shadow: 0 0 10px rgba(36, 70, 216, 0.45);
+      }
+
+      #preloader .ai-node.node-3 {
+        right: -4px;
+        top: calc(50% - 4px);
+      }
+
+      #preloader .ai-node.node-4 {
+        left: calc(50% - 4px);
+        bottom: -4px;
+        background: #2446d8;
+        box-shadow: 0 0 10px rgba(36, 70, 216, 0.45);
+      }
+
+      #preloader .pitch-line {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 68%;
+        height: 3px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, rgba(23, 24, 31, 0.1), rgba(23, 24, 31, 0.26), rgba(23, 24, 31, 0.1));
+      }
+
+      #preloader .ball {
+        position: absolute;
+        left: 0;
+        top: calc(68% - 22px);
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background:
+          radial-gradient(circle at 32% 28%, #ffffff 0 40%, #e7eaf2 41% 100%);
+        border: 2px solid #1b1e29;
+        box-shadow: 0 10px 18px rgba(10, 13, 22, 0.24);
+        animation: ball-run 1.8s cubic-bezier(0.66, 0.02, 0.28, 1) infinite;
+      }
+
+      #preloader .ball::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 9px;
+        height: 9px;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: #1b1e29;
+        box-shadow:
+          -9px -4px 0 -2px #1b1e29,
+          9px -4px 0 -2px #1b1e29,
+          -10px 7px 0 -2px #1b1e29,
+          10px 7px 0 -2px #1b1e29,
+          0 -11px 0 -2px #1b1e29;
+      }
+
+      #preloader .loader-text {
+        margin: 0;
+        font: 700 0.92rem/1.2 "Manrope", sans-serif;
+        letter-spacing: 0.06em;
+        color: #1a1f31;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes ring-pulse {
+        0% {
+          box-shadow: 0 0 0 0 rgba(36, 70, 216, 0.24);
+        }
+        70% {
+          box-shadow: 0 0 0 18px rgba(36, 70, 216, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(36, 70, 216, 0);
+        }
+      }
+
+      @keyframes ball-run {
+        0% {
+          left: 0;
+          transform: translateY(0) rotate(0deg);
+        }
+        38% {
+          transform: translateY(-16px) rotate(170deg);
+        }
+        50% {
+          left: calc(50% - 13px);
+          transform: translateY(-8px) rotate(220deg);
+        }
+        88% {
+          transform: translateY(-16px) rotate(390deg);
+        }
+        100% {
+          left: calc(100% - 34px);
+          transform: translateY(0) rotate(520deg);
+        }
+      }
+    </style>
+    <div id="preloader" aria-live="polite" aria-label="Loading website">
+      <div class="loader-stage" aria-hidden="true">
+        <div class="ai-ring"></div>
+        <div class="ai-core-label">AI</div>
+        <div class="ai-orbit">
+          <span class="ai-node node-1"></span>
+          <span class="ai-node node-2"></span>
+          <span class="ai-node node-3"></span>
+          <span class="ai-node node-4"></span>
+        </div>
+        <div class="pitch-line"></div>
+        <div class="ball"></div>
+      </div>
+      <p class="loader-text">Training footwork and models</p>
+    </div>
     <div id="root"></div>
     <!--
       This HTML file is a template.
